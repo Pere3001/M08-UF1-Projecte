@@ -1,5 +1,92 @@
-.principal {
-    width: 2000px;
-    height: 2000px;
-    background-color: black;
+/* Cabecera */
+.cabecera{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #580092;
 }
+.logo{
+    background-image: url(logo_cybershop.jpg);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-size:162px;
+    background-position-x: 50.3%;
+    background-position-y:45%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+/* Fin cabecera */
+/*Pagina Principal*/
+.principal {
+    width: 100%;
+    height: 20000px;
+    background-color: #7E2FB3;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Titulo1 label{
+    font-size:50px;
+    font-weight: 600;
+    color: #FF33FF;
+    text-shadow:5px 5px 5px #580092;
+}
+.Titulo2 label{
+    font-size:50px;
+    font-weight: 600;
+    text-shadow:5px 5px 5px #580092;
+    height: 500px;
+    line-height: 100px;
+}
+.subtitulo label{
+    color: #d1d1d1;
+    font-size: 30px;
+}
+.CajaTextosInicio{
+    margin-left: 20%;
+    margin-right: 45%;
+    margin-top: 200px;
+}
+.descarrega {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Fin pagina principal*/
+/* Tienda */
+.caja{
+    background-color: white;
+    width: 20%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 400px;
+    position: absolute;
+}
+.cajas{
+    width: 100%;
+}
+/* Fin Tienda*/
