@@ -6,6 +6,7 @@
     width: 100%;
     height: 100px;
     background-color: #580092;
+    z-index: 15;
 }
 .logo{
     background-image: url(logo_cybershop.jpg);
@@ -29,22 +30,20 @@
     font-size: 30px;
     position: absolute;
     margin-top: -80px;
-    margin-left: 20%;
+    margin-left: 10%;
     display: flex;
 }
-
 .quisom{
-    margin-left: 50px;
+    margin-left: 25px;
 }
 .envios{
-    margin-left: 50px;
+    margin-left: 25px;
 }
 .productes{
-    margin-left: 50px;
-
+    margin-left: 25px;
 }
 .contacte {
-    margin-left: 50px;
+    margin-left: 25px;
 }
 /*Fi tituls*/
 
@@ -142,6 +141,7 @@
     top: 0px;
     margin-left: -10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 10;
 }
 .Titulo1 label{
     font-size:50px;
@@ -164,6 +164,52 @@
     margin-left: 20%;
     margin-right: 45%;
     margin-top: 200px;
+}
+/*.ona1 {
+    width: 2000px;
+    height: 2000px;
+    border-radius: 3% 47% 40% 30% / 30% 32% 68% 70%  ;
+    clip-path: ;
+    background-color: #580092;
+    position: absolute;
+}*/
+.ona1 {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, #3498db 3%, transparent 1.5%);
+    background-size: 200px 200px; /* Ajusta el tamaño de los círculos */
+    pointer-events: none; /* Permite que el fondo no interfiera con los eventos del mouse */
+    animation: animateBackgroundX 30s linear infinite, animateBackgroundY 20s linear infinite; /* Ajusta la velocidad y duración de la animación */
+}
+@keyframes animateBackgroundX {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+/* Animación para mover los círculos en el eje Y */
+@keyframes animateBackgroundY {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 100%;
+    }
+}
+.ona2 {
+    border-radius: 30% 70% 54% 46% / 72% 67% 33% 28% ;
+    width: 300px;
+    height: 500px;
+    background-color: #580092;
+    position: absolute;
 }
 
 /* Botons descarrega */
@@ -239,16 +285,47 @@
 
 /*Fi estadistiques*/
 
-/* Apartat qui som */
-
-.objecte1 {
-    background-image: url(pc1-removebg-preview.png);
-    background-repeat: no-repeat;
-    height: 1000px;
-    width: 1000px;
+/* Apartat 1*/
+.quisom2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: black;
 }
 
-/*Fi apartat qui som*/
+
+/*Fi apartat 1*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Apartat 2*/
+
+/*Fi apartat 2*/
+
+
+
+
+
+
+
+
+
+/* Apartat 3*/
+
+/*Fi apartat 3*/
 
 
 
