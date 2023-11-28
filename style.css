@@ -1,17 +1,18 @@
-/* Cabecera */
 .cabecera{
     position: fixed;
+    display: flex;
     top: 0px;
-    left: 0px;
     width: 100%;
     height: 100px;
     background-color: #580092;
     z-index: 15;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .logo{
     background-image: url(logo_cybershop.jpg);
     background-repeat: no-repeat;
     width: 60px;
+    position: absolute;
     height: 60px;
     background-size:162px;
     background-position-x: 50.3%;
@@ -28,31 +29,31 @@
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
-    position: absolute;
-    margin-top: -80px;
-    margin-left: 10%;
+    margin-left: 100px;
+    margin-top: 35px;
+    font-weight: 700;
     display: flex;
+    align-items: center;
+    width: 1100px;
+    height: 30px;
+    border-style: dotted;
+    justify-content: space-between;
+    text-decoration: none;
 }
-.quisom{
-    margin-left: 25px;
-}
-.envios{
-    margin-left: 25px;
-}
-.productes{
-    margin-left: 25px;
-}
-.contacte {
-    margin-left: 25px;
-}
-/*Fi tituls*/
 
-    /* Iconos header */
+/*Fi titols*/
+
+/* Iconos header */
 .iconos_header{
-    margin-left: 70%;
-    width: 30%;
-    height: 100px;
-    margin-top: -70px;
+    right: 10px;
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    border-style: dashed;
+    margin-top: 30px;
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
 }
 .twitter_ico_header{
     background-image: url(twitter.png);
@@ -61,9 +62,6 @@
     height: 40px;
     width: 40px;
     background-color: #ede0ff;
-    margin-top: 15px;
-    margin-left: 15px;
-    position: absolute;
     border-radius: 50%;
 }
 .facebook_ico_header{
@@ -73,9 +71,6 @@
     height: 40px;
     width: 40px;
     background-color: #ede0ff;
-    margin-top: 15px;
-    margin-left: 105px;
-    position: absolute;
     border-radius: 50%;
 }
 .instagram_ico_header{
@@ -85,9 +80,6 @@
     height: 40px;
     width: 40px;
     background-color: #ede0ff;
-    margin-top: 15px;
-    margin-left: 195px;
-    position: absolute;
     border-radius: 50%;
 }
 .linkedin_ico_header{
@@ -97,9 +89,6 @@
     height: 40px;
     width: 40px;
     background-color: #ede0ff;
-    margin-top: 15px;
-    margin-left: 285px;
-    position: absolute;
     border-radius: 50%;
 }
 .settings_ico_header{
@@ -108,11 +97,8 @@
     background-size: 40px;
     height: 40px;
     width: 40px;
-    margin-top: 15px;
-    margin-left: 375px;
-    position: absolute;
 }
-    /* Iconos header */
+/* Iconos header */
 
 /* Fin cabecera */
 
@@ -141,18 +127,18 @@
     top: 0px;
     margin-left: -10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    z-index: 10;
+    z-index: 3;
 }
 .Titulo1 label{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:50px;
+    font-size: 50px;
     font-weight: 600;
     color: #FF33FF;
     text-shadow:5px 5px 5px #580092;
 }
 .Titulo2 label{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:50px;
+    font-size: 50px;
     font-weight: 600;
     text-shadow:5px 5px 5px #580092;
     height: 500px;
@@ -170,14 +156,13 @@
 .ona1 {
     content: "";
     position: absolute;
-    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
     height: 20000px;
     background: radial-gradient(circle, #01253d 97%, transparent 90.5%);
-    background-size: 200px 200px; /* Ajusta el tamaño de los círculos */
-    pointer-events: none; /* Permite que el fondo no interfiera con los eventos del mouse */
+    background-size: 200px 200px; 
+    pointer-events: none; 
     animation: animateBackgroundX 300s linear infinite, animateBackgroundY 200s linear infinite; /* Ajusta la velocidad y duración de la animación */
 }
 @keyframes animateBackgroundX {
@@ -189,7 +174,6 @@
     }
 }
 
-/* Animación para mover los círculos en el eje Y */
 @keyframes animateBackgroundY {
     from {
         background-position: 0 0;
@@ -277,7 +261,7 @@
 }
 .TituloQuiSom label{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:50px;
+    font-size: 50px;
     font-weight: 600;
     color: #FF33FF;
     text-shadow:5px 5px 5px #580092;
@@ -312,12 +296,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(ellipse at center, #e570e7 0%,#01253d 52%,#01253d 102%,#a849a3 99%);
+    background: radial-gradient(ellipse at center, #e570e7 0%, #01253d 52%, #01253d 102%, #a849a3 1%);background: radial-gradient(ellipse at center, rgba(229,112,231, 1) 0%, rgba(1,37,61, 0.5) 52%, rgba(1,37,61, 0) 102%, rgba(168,73,163, 0.01) 99%);
     background-size: cover;
 }
 .Titulo1_QuiSom{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:50px;
+    font-size: 50px;
     font-weight: 600;
     color: #FF33FF;
     width: 700px;
@@ -326,7 +310,7 @@
 }
 .Titulo2_QuiSom{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:30px;
+    font-size: 30px;
     font-weight: 300;
     width: 700px;
     color: #9b89ff;
@@ -340,44 +324,110 @@
 }
 /*Fi apartat 1*/
 
-/* Apartat 2
+
 .Video {
+    width: 2000px;
+    height: 500px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
 }
 .Titulo1_Video {
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #FF33FF;
+    width: 100%;
+    justify-content: center;
 }
 .Titulo2_Video {
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    width: 100%;
+    color: #9b89ff;
+    justify-content: center;
 }
-.Link_Video{
-    
+
+
+/* Apartat 3 */
+.Components {
+    width: 2000px;
+    height: 1500px;
+    margin-top: 650px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    border-color: red;
+    border-style: inset;
 }
-Fi apartat 2*/
+.Titol_Components {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #FF33FF;
+    width: 100%;
+    justify-content: center;
+}
 
+/* Fi apartat 3*/
 
+/* Apartat 4 */
+.Testimonis {
+    width: 2000px;
+    height: 1500px;
+    margin-top: 650px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    border-color: red;
+    border-style: inset;
+}
+.Titol_Testimonis {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #FF33FF;
+    width: 100%;
+    justify-content: center;
+}
+/* Fi apartat 4 */
 
+/* Apartat 5 */
+/*
+.Companyies {
+    width: 2000px;
+    height: 1500px;
+    margin-top: 650px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    border-color: red;
+    border-style: inset;
+}
+*/
+/* Fi apartat 5 */
 
-
-
-
-
-
-/* Apartat 3*/
-
-/*Fi apartat 3*/
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Apartat 6 */
+/*
+.Contacte {
+    width: 2000px;
+    height: 1500px;
+    margin-top: 650px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    border-color: red;
+    border-style: inset;
+}
+*/
+/* Fi apartat 6 *7
 
 /*Fin pagina principal*/
 

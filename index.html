@@ -11,24 +11,24 @@
     <div class="fondo">
         <div class="cabecera">
             <div class="logo"></div>
+            <div class="titulos">
+                <a href="#quisom">
+                    <label style="margin-left: 15px;">Qui som?</label>
+                </a>
+                <label style="margin-left: 15px;">Monta el teu PC!</label>
+                <label style="margin-left: 15px;">Opinions dels clients</label>
+                <label style="margin-left: 15px;">Contacte</label>
+            </div>
             <div class="iconos_header">
-                <div class="twitter_ico_header">
-                </div>
+                <div class="twitter_ico_header"></div>
                 <div class="facebook_ico_header"></div>
                 <div class="instagram_ico_header"></div>
                 <div class="linkedin_ico_header"></div>
                 <div class="settings_ico_header"></div>
             </div>
-            <div class="titulos">
-                <div class="quisom"><label>Qui som?</label></div>
-                <div class="envios"><label>A que ens dediquem?</label></div>
-                <div class="productes"><label>Monta el teu PC!</label></div>
-                <div class="contacte"><label>Contacte</label></div>
-            </div>
         </div>
         <div class="ona1">
         </div>
-        <!--<div class="ona2"></div>-->
         <div class="principal">
             <div style="margin-top: 0px"></div>
             <div class="CajaTextosInicio">
@@ -64,7 +64,8 @@
                 <div class="separador_estadistiques"></div>
                 <div class="apartado_estadistiques">
                     <div class="titulo_estadistiques"><b>4.8 ☆</b></div>
-                    <div class="contenido_estadistiques"><label>Valoració a internet</label></div>
+                    <div class="contenido_estadistiques"><label>Valoració a promig dels clients</label></div>
+                    <a name="quisom">
                 </div>
             </div>
             <div class="quisom2">
@@ -84,7 +85,7 @@
                             <div class="Titulo1_QuiSom">
                                 <label>Nosaltres som CyberShop</label>
                             </div>
-                            <div class="Titulo2_QuiSom">
+                            <div style="margin-top: 40px;" class="Titulo2_QuiSom">
                                 <label>Ens dediquem a la venta de components informàtics, reparació d'equips i instal·lació de software. A part reacondicionar aparells. Fem tot allò que necessitis, ens adaptem a les teves necessitats.</label>
                             </div>
                         </div>
@@ -96,11 +97,11 @@
                             <div class="Titulo1_QuiSom">
                                 <label>Més sobre nosaltres</label>
                             </div>
-                            <div class="Titulo2_QuiSom">
+                            <div style="margin-top: 40px;" class="Titulo2_QuiSom">
                                 <label>Som dos nois que vam decidir aplicar els nosaltres coneixements per ajudar a la gent a tenir els equips informàtics més actualitzats i moderns, que s'adaptin a les seves necessitats. Ens encanta ajudar a la gent!</label>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     <div class="cajaderecha">
                         <div class="PC1_fondo">
                             <div class="PC2"></div>
@@ -108,21 +109,26 @@
                     </div>
                 </div>
             </div>
-        <!--
             <div class="Video">
                 <div class="Titulo1_Video">
-                    <label>Aquí tens un exemple de com muntar un ordinador!</label>
+                    <label>Monta el teu PC!</label>
                 </div>
-                <div class="Titulo2_Video">
-                    <label>Proto és la imatge de la nostra empresa, ell publica al seu canal al que ens dediquem nosaltres!</label>
+                <div style="margin-top: 40px;" class="Titulo2_Video">
+                    <label>Aquí tens un vídeo de com pots montar el teu PC, però recora si necesstes ajuda ens tens a nosltres!</label>
                 </div>
-                <div class="Link_Video">
-                    <a href="https://www.youtube.com/watch?v=LeZxrSC2n6c&pp=ygUQY29uc3RydWlyIHVuYSBwYw%3D%3D">Video principal</a>
+                <div style="margin-top: 40px;" class="video-container" onclick="playPause()">
+                    <iframe width="600px" height="320px" id="youtube-video" src="https://www.youtube.com/embed/LeZxrSC2n6c" frameborder="0" allowfullscreen></iframe>
                 </div>
+                <script>
+                    function playPause() {
+                        var iframe = document.getElementById("youtube-video");
+                        var iframeSrc = iframe.src;
+                        iframe.src = iframeSrc;
+                    }
+                </script>
             </div>
-    
-            <div class="part3">
-                <div class="titol4">Alguns dels components més venuts</div>
+            <div class="Components">
+                <div class="Titol_Components"><label>Alguns dels components més venuts</label></div>
                 <div class="dispositiu1"><label>Processador</label></div>
                 <div class="dispositiu2"><label>RAM</label></div>
                 <div class="dispositiu3"><label>Disc Dur</label></div>
@@ -132,37 +138,26 @@
                 <div class="boletes"></div>
             </div>
     
-            <div class="testimonis">
-                <div class="titol4"><label>Algunes de les persones que han comprat han deixat les opinions següents</label></div>
+    
+            <div class="Testimonis">
+                <div class="Titol_Testimonis"><label>Opinions dels clients</label></div>
                 <div class="opinio1"><label>Una tenda genial! Molt atents i professionals - Adria Garcia</label></div>
                 <div class="opinio2"><label>Atenció molt propera, ho fan tot genial, el Windows sembla anar més ràpid - Marc Sánchez</label></div>
                 <div class="opinio3"><label>El Fortnite em funciona millor desde que van netejar el meu PC - David Sanabria</label></div>
                 <div class="opinio4"><label>Ara sempre que tingui algún error els hi portaré el meu ordinador - Rosi Di Nino</label></div>
                 <div class="opinio5"><label>Tot funciona genial desde que em van augmentar la RAM - Oriol Ortega</label></div>
             </div>
+    <!--
     
-            <div class="preguntesfq">
-                <div class="titol5"><label>Preguntes Freqüents</label></div>
-                <div class="pregunta1"><label>Arribeu a enviar a tot el món?</label></div>
-                <div class="resposta1"><label>En efecte! Enviem a tot el món.</label></div>
-                <div class="pregunta2"><label>Amb quines marques treballeu?</label></div>
-                <div class="resposta2"><label>Treballem amb marques com Intel, AMD i Kingston!</label></div>
-                <div class="pregunta3"><label>Quan soleu trigar en reparar?</label></div>
-                <div class="resposta3"><label>Depenent del volum de feina en el que ens trobem, però en una setmana els nostres clients ho solen tenir tot resolt.</label></div>
-                <div class="pregunta4"><label>I els envios? Quan triguen?</div>
-                <div class="resposta4"><label>Normalment 48 hores a nivell peninsular i una setmana a nivell internacional.</label></div>
-                <div class="imatge"></div>
-            </div>
-    
-            <div class="companyies">
-                <div class="titol6><label>Companyies amb les que treballem</label></div>
+            <div class="Companyies">
+                <div class="Titol_Companyies><label>Companyies amb les que treballem</label></div>
                 <div class="empresa1">Intel</div>
                 <div class="empresa2">AMD</div>
                 <div class="empresa3">Microsoft</div>
                 <div class="empresa4">Kingston</div>
             </div>
     
-            <div class="contacte">
+            <div class="Contacte">
                 <div class="titolfinal"></div>
                 <div class="apps"></div>
                 <div class="logotitol"></div>
