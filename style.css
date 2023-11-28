@@ -137,19 +137,21 @@
     width: 2000px;
     height: 20000px;
     justify-content: center;
-    display: flex;
+    display: block;
     top: 0px;
     margin-left: -10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 10;
 }
 .Titulo1 label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:50px;
     font-weight: 600;
     color: #FF33FF;
     text-shadow:5px 5px 5px #580092;
 }
 .Titulo2 label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:50px;
     font-weight: 600;
     text-shadow:5px 5px 5px #580092;
@@ -165,26 +167,18 @@
     margin-right: 45%;
     margin-top: 200px;
 }
-/*.ona1 {
-    width: 2000px;
-    height: 2000px;
-    border-radius: 3% 47% 40% 30% / 30% 32% 68% 70%  ;
-    clip-path: ;
-    background-color: #580092;
-    position: absolute;
-}*/
 .ona1 {
     content: "";
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: radial-gradient(circle, #3498db 3%, transparent 1.5%);
+    width: 100%;
+    height: 20000px;
+    background: radial-gradient(circle, #01253d 97%, transparent 90.5%);
     background-size: 200px 200px; /* Ajusta el tamaño de los círculos */
     pointer-events: none; /* Permite que el fondo no interfiera con los eventos del mouse */
-    animation: animateBackgroundX 30s linear infinite, animateBackgroundY 20s linear infinite; /* Ajusta la velocidad y duración de la animación */
+    animation: animateBackgroundX 300s linear infinite, animateBackgroundY 200s linear infinite; /* Ajusta la velocidad y duración de la animación */
 }
 @keyframes animateBackgroundX {
     from {
@@ -201,22 +195,17 @@
         background-position: 0 0;
     }
     to {
-        background-position: 0 100%;
+        background-position: 400% 100%;
     }
-}
-.ona2 {
-    border-radius: 30% 70% 54% 46% / 72% 67% 33% 28% ;
-    width: 300px;
-    height: 500px;
-    background-color: #580092;
-    position: absolute;
 }
 
 /* Botons descarrega */
 .descarrega {
-    width: 500px;
-    height: 200px;
-    margin-top: 100px;
+    width: 420px;
+    height: 60;
+    margin-top: 50px;
+    display: flex;
+
 }
 .playstore {
     background-image: url(playstore1.png);
@@ -224,9 +213,7 @@
     background-size: 200px;
     width: 200px;
     height: 60px;
-    margin-top: -60px;
-    margin-left: 220px;
-    position: absolute;
+    margin-left: 20px;
     border-radius: 10px;  
     
 }
@@ -236,9 +223,6 @@
     background-size: 200px;
     width: 200px;
     height: 60px;
-    margin-top: -60px;
-    margin-left: 0px;
-    position: absolute;
     border:0cm ;
     border-radius: 10px;
     border-color: white;
@@ -247,37 +231,34 @@
 
 /* Estadistiques */
 .estadistiques_marco {
-    width: 100%;
+    width: 2000px;
     height: 200px;
-    position: absolute;
+    display: flex;
+    margin-top: 100px;
     top: 700px;
     align-items: center;
     justify-content: center;
-    display: flex
 }
 .titulo_estadistiques{
-    width: 200px;
+    width: 500px;
     height: 100px;
     justify-content: center;
     align-items: center;
     display: flex;
     color: #FF33FF;
     font-size: 48px;
-    margin-left: 200px;
 }
 .contenido_estadistiques{
-    width: 200px;
+    width: 500px;
     height: 100px;
     justify-content: center;
     align-items: center;
     display: flex;
     color: #9b89ff;
     font-size: 20px;
-    margin-left: 200px;
-
 }
 .separador_estadistiques{
-    margin-left: 180px;
+    margin-left: -20px;
     width: 2px;
     height: 100%;
     background-color: gray;
@@ -287,33 +268,91 @@
 
 /* Apartat 1*/
 .quisom2 {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: black;
+    width: 2000px;
+    height: 2500px;
+    margin-top: 250px;
+    justify-content: center;
+    display: block;
+    text-align: center;
 }
-
-
+.TituloQuiSom label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:50px;
+    font-weight: 600;
+    color: #FF33FF;
+    text-shadow:5px 5px 5px #580092;
+    text-align: center;
+}
+.alturas{
+    display: flex;
+}
+.cajaizquierda{
+    width: 1000px;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+.cajaderecha{
+    width: 1000px;
+    height: 1000px;
+    justify-content: center;
+    display:flex;
+}
+.PC1{
+    background-image: url(PC1.png);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
+.PC1_fondo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at center, #e570e7 0%,#01253d 52%,#01253d 102%,#a849a3 99%);
+    background-size: cover;
+}
+.Titulo1_QuiSom{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:50px;
+    font-weight: 600;
+    color: #FF33FF;
+    width: 700px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.Titulo2_QuiSom{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:30px;
+    font-weight: 300;
+    width: 700px;
+    color: #9b89ff;
+    margin-left: 150px;
+}
+.PC2{
+    background-image: url(OIP-removebg-preview.png);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
 /*Fi apartat 1*/
 
+/* Apartat 2
+.Video {
+}
+.Titulo1_Video {
+    
+}
+.Titulo2_Video {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Apartat 2*/
-
-/*Fi apartat 2*/
+}
+.Link_Video{
+    
+}
+Fi apartat 2*/
 
 
 
