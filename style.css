@@ -363,16 +363,75 @@
     border-radius: 20px;
     border-color: red;
     border-style: inset;
-}
-.Titol_Components {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
     font-size: 50px;
     font-weight: 600;
     color: #FF33FF;
+}
+.Titol_Components {
+    font-size: 50px;
+    font-weight: 600;
     width: 100%;
     justify-content: center;
 }
-
+.container_700px{
+    width: 700px;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at center, #e570e7 0%, #01253d 52%, #01253d 102%, #a849a3 1%);background: radial-gradient(ellipse at center, rgba(229,112,231, 1) 0%, rgba(1,37,61, 0.5) 52%, rgba(1,37,61, 0) 102%, rgba(168,73,163, 0.01) 99%);
+    background-size: cover;
+    display: block;
+    align-content: center;
+}
+.dispositiu1{
+    width: 350px;
+    height: 350px;
+    background-image: url(https://www.mouser.es/images/marketingid/2014/img/123006595.png?v=070223.0304);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.dispositiu2{
+    width: 350px;
+    height: 350px;
+    background-image: url(ram.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+.dispositiu3{
+    width: 350px;
+    height: 350px;
+    background-image: url(discoduro.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0%;
+}
+.dispositiu4{
+    width: 350px;
+    height: 350px;
+    background-image: url(cajapc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0%;
+}
+.dispositiu5{
+    width: 350px;
+    height: 350px;
+    background-image: url(placabase.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0%;
+}
+.dispositiu6{
+    width: 350px;
+    height: 350px;
+    background-image: url(grafica.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0%;
+}
 /* Fi apartat 3*/
 
 /* Apartat 4 */
