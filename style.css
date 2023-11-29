@@ -102,13 +102,6 @@
 
 /* Fin cabecera */
 
-
-
-
-
-
-
-
 /*Pagina Principal*/
 .fondo{
     width: 101%;
@@ -382,7 +375,7 @@
     align-items: center;
     background: radial-gradient(ellipse at center, #e570e7 0%, #01253d 52%, #01253d 102%, #a849a3 1%);background: radial-gradient(ellipse at center, rgba(229,112,231, 1) 0%, rgba(1,37,61, 0.5) 52%, rgba(1,37,61, 0) 102%, rgba(168,73,163, 0.01) 99%);
     background-size: cover;
-    display: block;
+    display: flex;
     align-content: center;
 }
 .dispositiu1{
@@ -398,7 +391,14 @@
     background-image: url(ram.png);
     background-repeat: no-repeat;
     background-size: contain;
-    display: block;
+    margin-top: 85px;
+    position: absolute;
+}
+.textdispositiu{
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    margin-top: 10px;
 }
 .dispositiu3{
     width: 350px;
@@ -452,7 +452,19 @@
     font-weight: 600;
     color: #FF33FF;
     width: 100%;
-    justify-content: center;
+    margin-top: 20px;
+}
+.Container_testimonis {
+    width: 100%;
+    height: 250px;
+    background-color: #580092;
+    justify-content: space-between;
+    ,
+}
+.Container_testimonis label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    color: #FF33FF;
 }
 /* Fi apartat 4 */
 
